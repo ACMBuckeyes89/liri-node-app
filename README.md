@@ -11,9 +11,10 @@ Liri Node APP
 -When on the command line, enter the following commands in the terminal after 
 -declaring "node liri.js" plus additional commands without the brackets:
 	(1) my-tweets
-	(2) spotify-this-song <name of song>
-	(3) movie-this <name of movie>
+	(2) spotify-this-song <name of song> --> Include dashes in between spaces of song
+	(3) movie-this <name of movie> --> Include dashes in between space of movie
 	(4) do-what-it-says  
+Example: movie --> Silence-of-The-Lambs
 
 -Tweets: Shows the last 20 tweets from my screen name
 -Spotify: Shows a list of artists based on the song searched
