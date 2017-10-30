@@ -76,6 +76,7 @@ if (action === "spotify-this-song") {
 //Posting code to find a movie using the omdb api key
 if(action === "movie-this") {
 	var omdb = `https://www.omdbapi.com/?t=${value}&y=&plot=short&apikey=40e9cece`;
+	//var omdb = "https://www.omdbapi.com/?apikey=40e9cece&";
 	request(omdb, function(error, response, body) {
 		if(value) {
 			var body = JSON.parse(body);
@@ -83,6 +84,7 @@ if(action === "movie-this") {
 			console.log(`Title: ${body.Title} \nRelease Year: ${body.Year} \nIMDB Rating: ${body.imdbRating}
 				\nRotten Tomatoes Rating: ${body.tomatoRating} \nCountry: ${body.Country} \nLanguage: ${body.Language}
 				\nPlot: ${body.Plot} \nActors: ${body.Actors}`);
+			//console.log(body);
 			console.log('\n=========================\n');
 		} else {
 			console.log("Error!");
